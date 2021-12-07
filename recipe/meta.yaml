@@ -43,7 +43,8 @@ test:
 
 about:
   home: http://scikit-criteria.org/
-  summary: Scikit-Criteria is a collections of algorithms, methods and
+  summary: |
+    Scikit-Criteria is a collection of Multiple-criteria decision analysis (MCDA) methods integrated into scientific python stack. Is Open source and commercially usable.
   license: BSD-3-Clause
   license_file: LICENSE.txt
 
