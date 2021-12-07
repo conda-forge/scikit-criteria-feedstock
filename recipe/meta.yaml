@@ -11,7 +11,7 @@ source:
   sha256: 82274adbd468914e95be46bdf9322e772d3446b7a3bb6309e9aacd6a7ff5098f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -43,7 +43,8 @@ test:
 
 about:
   home: http://scikit-criteria.org/
-  summary: Scikit-Criteria is a collections of algorithms, methods and
+  summary: |
+    Scikit-Criteria is a collection of Multiple-criteria decision analysis (MCDA) methods integrated into scientific python stack. Is Open source and commercially usable.
   license: BSD-3-Clause
   license_file: LICENSE.txt
 

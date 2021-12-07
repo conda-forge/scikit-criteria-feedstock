@@ -7,7 +7,8 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-criteria-feedstock/blob/master/LICENSE.txt)
 
-Summary: Scikit-Criteria is a collections of algorithms, methods and
+Summary: Scikit-Criteria is a collection of Multiple-criteria decision analysis (MCDA) methods integrated into scientific python stack. Is Open source and commercially usable.
+
 
 Current build status
 ====================
