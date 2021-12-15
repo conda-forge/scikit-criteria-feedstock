@@ -1,5 +1,5 @@
 {% set name = "scikit-criteria" %}
-{% set version = "0.2.11" %}
+{% set version = "0.5" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-criteria-{{ version }}.tar.gz
-  sha256: 82274adbd468914e95be46bdf9322e772d3446b7a3bb6309e9aacd6a7ff5098f
+  sha256: d2e108ea90c913d5f92d7c9761aa8555a809830096100918538c658a0396f850
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,26 +20,25 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - attrs
-    - joblib
-    - json_tricks
-    - matplotlib-base
-    - numpy
-    - pulp
     - python >=3.6
+    - numpy
+    - pandas
+    - pyquery
     - scipy
-    - tabulate
+    - jinja2
+    - custom-inherit
+    - seaborn
+    - pulp
 
 test:
   imports:
     - skcriteria
-    - skcriteria.datasets
   commands:
     - pip check
   requires:
     - pip
-    - mock  # for `pip check`
-    - pytest  # for `pip check`
+#     - mock  # for `pip check`
+#     - pytest  # for `pip check`
 
 about:
   home: http://scikit-criteria.org/
