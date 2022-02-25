@@ -29,6 +29,7 @@ requirements:
     - custom-inherit
     - seaborn
     - pulp
+    - deprecated
 
 test:
   imports:
