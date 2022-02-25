@@ -1,5 +1,5 @@
 {% set name = "scikit-criteria" %}
-{% set version = "0.5" %}
+{% set version = "0.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-criteria-{{ version }}.tar.gz
-  sha256: d2e108ea90c913d5f92d7c9761aa8555a809830096100918538c658a0396f850
+  sha256: 75edbd80dd61e853ec06a89f7e374f4c3a9c931a28db8944ed0d30252a7ed3af
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
     - custom-inherit
     - seaborn
     - pulp
+    - deprecated
 
 test:
   imports:
