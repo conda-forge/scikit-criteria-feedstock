@@ -1,5 +1,5 @@
 {% set name = "scikit-criteria" %}
-{% set version = "0.7" %}
+{% set version = "0.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-criteria-{{ version }}.tar.gz
-  sha256: 8c1ce73499d94d9faa6406938dc1ffa93ee17c0873511ed21eca5679ea92b057
+  sha256: 6a3b9359daa4ef81b2df9cd86450d205acfe510c661adbec07013ade3d25e16a
 
 build:
   number: 0
