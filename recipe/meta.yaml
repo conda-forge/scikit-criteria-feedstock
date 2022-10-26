@@ -30,6 +30,7 @@ requirements:
     - seaborn
     - pulp
     - deprecated
+    - scikit-learn
 
 test:
   imports:
