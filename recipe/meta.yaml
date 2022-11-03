@@ -31,6 +31,7 @@ requirements:
     - pulp
     - deprecated
     - scikit-learn
+    - importlib_metadata
 
 test:
   imports:
@@ -39,8 +40,6 @@ test:
     - pip check
   requires:
     - pip
-#     - mock  # for `pip check`
-#     - pytest  # for `pip check`
 
 about:
   home: http://scikit-criteria.org/
