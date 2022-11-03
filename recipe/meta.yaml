@@ -28,8 +28,8 @@ requirements:
     - jinja2
     - custom-inherit
     - seaborn
-    - pulp
     - deprecated
+    - pulp
     - scikit-learn
     - importlib_metadata
     - matplotlib-base !=3.6.1
