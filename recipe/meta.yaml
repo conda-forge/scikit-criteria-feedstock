@@ -1,5 +1,5 @@
 {% set name = "scikit-criteria" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-criteria-{{ version }}.tar.gz
-  sha256: 6a3b9359daa4ef81b2df9cd86450d205acfe510c661adbec07013ade3d25e16a
+  sha256: e1fe346c6c1fcc18227ec7f08f978345fb13a81892f055b65bb9fb9f72259339
 
 build:
   number: 0
@@ -28,9 +28,11 @@ requirements:
     - jinja2
     - custom-inherit
     - seaborn
-    - pulp
     - deprecated
+    - pulp
     - scikit-learn
+    - importlib_metadata
+    - matplotlib-base !=3.6.1
 
 test:
   imports:
@@ -39,8 +41,6 @@ test:
     - pip check
   requires:
     - pip
-#     - mock  # for `pip check`
-#     - pytest  # for `pip check`
 
 about:
   home: http://scikit-criteria.org/
