@@ -1,11 +1,11 @@
-About scikit-criteria
-=====================
+About scikit-criteria-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-criteria-feedstock/blob/main/LICENSE.txt)
 
 Home: http://scikit-criteria.org/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-criteria-feedstock/blob/main/LICENSE.txt)
 
 Summary: Scikit-Criteria is a collection of Multiple-criteria decision analysis (MCDA) methods integrated into scientific python stack. Is Open source and commercially usable.
 
