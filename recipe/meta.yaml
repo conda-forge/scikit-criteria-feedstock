@@ -32,7 +32,8 @@ requirements:
     - pulp
     - scikit-learn
     - importlib_metadata
-    - matplotlib-base !=3.6.1
+    - matplotlib-base >=3.8.2
+    - methodtools
 
 test:
   imports:
