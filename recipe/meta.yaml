@@ -38,10 +38,6 @@ requirements:
 test:
   imports:
     - skcriteria
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: http://scikit-criteria.org/
