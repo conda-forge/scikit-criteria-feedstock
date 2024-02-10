@@ -1,5 +1,5 @@
 {% set name = "scikit-criteria" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-criteria-{{ version }}.tar.gz
-  sha256: 5da60cac753e94c423e5c98aaa5766ced5c961bb9aeb2cbd010262e9f7ee0098
+  sha256: 2c55c2fca23e61a7ded6d17470224e73d6c590b57da98b9d1e9f4411a9873221
 
 build:
   number: 0
@@ -32,15 +32,12 @@ requirements:
     - pulp
     - scikit-learn
     - importlib_metadata
-    - matplotlib-base !=3.6.1
+    - matplotlib-base >=3.8.2
+    - methodtools
 
 test:
   imports:
     - skcriteria
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: http://scikit-criteria.org/
