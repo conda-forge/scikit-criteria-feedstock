@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - python >={{ python_min }}
     - numpy
@@ -31,7 +32,7 @@ requirements:
     - deprecated
     - pulp
     - scikit-learn
-    - importlib_metadata
+    - importlib-metadata
     - matplotlib-base >=3.8.2
     - methodtools
 
