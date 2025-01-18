@@ -7,20 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-criteria-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/scikit-criteria-{{ version }}.tar.gz
   sha256: 2c55c2fca23e61a7ded6d17470224e73d6c590b57da98b9d1e9f4411a9873221
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - pandas
     - pyquery
@@ -31,11 +32,13 @@ requirements:
     - deprecated
     - pulp
     - scikit-learn
-    - importlib_metadata
+    - importlib-metadata
     - matplotlib-base >=3.8.2
     - methodtools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - skcriteria
 
