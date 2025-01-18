@@ -9,7 +9,6 @@ Package license: BSD-3-Clause
 
 Summary: Scikit-Criteria is a collection of Multiple-criteria decision analysis (MCDA) methods integrated into scientific python stack. Is Open source and commercially usable.
 
-
 Current build status
 ====================
 
