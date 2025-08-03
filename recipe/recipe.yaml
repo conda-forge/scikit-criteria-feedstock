@@ -1,17 +1,17 @@
 context:
   name: scikit-criteria
-  version: 0.8.7
+  version: "0.9"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/scikit-criteria-${{ version }}.tar.gz
-  sha256: 2c55c2fca23e61a7ded6d17470224e73d6c590b57da98b9d1e9f4411a9873221
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 6a463258f26b389fda370d20bb4521191579b2486d8d9b472aeddfda12c4ebfe
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
