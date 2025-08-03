@@ -27,7 +27,7 @@ requirements:
     - pandas >=2.0
     - scipy >=1.10
     - jinja2
-    - custom_inherit
+    - custom-inherit
     - seaborn >=0.13,<0.14
     - pulp >=2.8,<2.9
     - deprecated
