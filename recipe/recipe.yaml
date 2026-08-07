@@ -1,6 +1,6 @@
 context:
   name: scikit-criteria
-  version: "0.9"
+  version: "0.10"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 6a463258f26b389fda370d20bb4521191579b2486d8d9b472aeddfda12c4ebfe
+  sha256: 78386f894064dfc969f7b620c8e82ffdd9add0cd3010f1f6d80379565c6bfc47
 
 build:
   number: 0
